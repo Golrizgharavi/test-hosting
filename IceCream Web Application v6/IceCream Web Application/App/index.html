@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/custom.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Styles/Main.css" rel="stylesheet" />
+    <link href="../Styles/Home.css" rel="stylesheet" />
+
+
+    <script src="../Scripts/jquery-3.0.0.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/angular-route.min.js"></script>
+
+    <script src="/App/app.js"></script>
+    <script src="/App/services/shopService.js"></script>
+    <script src="/App/controllers/homeController.js"></script>
+    <script src="/App/controllers/aboutController.js"></script>
+    <script src="controllers/menuController.js"></script>
+    <script src="controllers/reviewController.js"></script>
+
+</head>
+<body ng-controller="mainController">
+
+    <div class="Header">
+        <div id="nav" class="navbar navbar-fixed-top" data-spy="affix">
+            <div class="container">
+                <!--<div class="navbar-header">
+                    <a href="#" class="navbar-brand">Brand</a>
+                    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>-->
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#/" target="_blank" class="text-uppercase">Home</a></li>
+                        <li><a href="#/menu" target="_blank" class="text-uppercase">Falavers</a></li>
+                        <li><a href="#/about" target="_blank" class="text-uppercase">About</a></li>
+                        <li><a href="#/review" target="_blank" class="text-uppercase">Review</a></li>
+                    </ul>
+                    <ul class="nav pull-right navbar-nav">
+                        <li class="sm-holder">
+                            <a href="javascript:void(0)" class="sm-icon fb-ic"></a>
+                            <a href="javascript:void(0)" class="sm-icon tw-ic"></a>
+                            <a href="javascript:void(0)" class="sm-icon insta-ic"></a>
+                            <a href="javascript:void(0)" class="sm-icon yt-ic"></a>
+                        </li>
+                        <!--<li>
+                            <a href="#"><span class="badge">2</span></a>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div><!-- /.navbar -->
+
+    </div>
+    <div id="ContentHolder">
+        <div ng-view>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="Footer">
+        <div class="row FRow">
+            <div class="col-md-8 ">
+
+                <div class="myInfo">
+                    <span class="Title">Address</span>
+                    <span class="Content">
+                        500 Cherry St.<br />
+                        Gaithersburg,<br />
+                        MD 20777<br />
+                    </span>
+                </div>
+                <div class="myInfo">
+                    <span class="Title">Contact</span>
+                    <span class="Content">
+                        <p>info@micreez.com</p>
+                        <p>Tel: 123-456-7890</p>
+                    </span>
+                </div>
+                <div class="myInfo">
+                    <span class="Title">Hours</span>
+                    <span class="Content text-uppercase">
+                        <p> OPEN DAILY</p>
+                        <p> 10AM-8PM</p>
+                    </span>
+                </div>
+
+            </div>
+            <div class="col-md-4 ">
+
+                <div class="subscribe">
+
+                    <form name="subscribeForm" ng-controller="subscribeForm">
+                        <input type="text" ng-model="email" name="email" placeholder="Email Address..." required ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" />
+                        <button type="button" ng-click="Subscribe()" class="btn-Subscribe" ng-disabled="subscribeForm.$invalid">Subscribe!</button>
+                        <span ng-show="subscribeForm.email.$dirty&&subscribeForm.email.$error.pattern">Please Enter a Valid Email! :)</span>
+                        <span id="SubscribeMsg"></span>
+                        <!--{{subscribeForm.email.$valid}}-->
+                    </form>
+
+                </div>
+                <ul class="FSocialM">
+                    <li><a href="javascript:void(0)" class="sm-icon fb-ic"></a></li>
+                    <li><a href="javascript:void(0)" class="sm-icon tw-ic"></a></li>
+                    <li><a href="javascript:void(0)" class="sm-icon insta-ic"></a></li>
+                    <li><a href="javascript:void(0)" class="sm-icon yt-ic"></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <p>&copy;2018- <span id="currentYear"></span> Micreez Angular JS App</p>
+    </div>
+
+
+    <script>
+
+        $('#nav').affix({
+            offset: {
+                top: $('#ContentHolder').offset().top
+            }
+        });
+
+
+        var CurrentYear = document.getElementById("currentYear");
+        CurrentYear.innerHTML = new Date().getFullYear();
+
+
+
+
+    </script>
+</body>
+</html>

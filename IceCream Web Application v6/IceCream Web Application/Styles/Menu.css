@@ -1,0 +1,72 @@
+﻿
+
+.pFlav {
+    background-image: url('../Images/flavorsH.jpg');
+    height:650px;
+}
+
+
+.pFlavTitle{
+
+    text-transform:uppercase;
+    font-size:40px;
+    color:#fff;
+    font-weight:bold;
+    text-align:center;
+    padding-top:5%;
+}
+.pFlavTitle h1{
+
+   font-size:90px;
+   font-weight:bolder;
+}
+
+
+.FlavsHolder{
+
+    padding:100px;
+    min-height:500px;
+    direction:rtl;
+}
+
+.FlavItem {color:#666; text-align:center;margin:20px 0;}
+    .FlavItem img {
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        max-width: 200px;
+        max-height: 200px;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        box-shadow: 1px 2px 10px #8d8b8b;
+    }
+
+.img-responsive {
+
+}
+
+.FlavItem .flavTitle {
+
+    text-transform:uppercase;
+    margin:30px 30px 10px 30px;
+    padding:20px 0px;
+    border-bottom:2px solid #666;
+    display:block;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.FlavItem .flavDec {
+    display: block;
+    word-spacing:2px;
+    padding:0 10px;
+}
+
+.flavDec i {
+    display: block;
+    color: #1eb01b;
+    font-weight: bold;
+    font-size:20px;
+    padding:20px 0;
+}

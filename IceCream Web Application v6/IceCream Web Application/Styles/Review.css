@@ -1,0 +1,106 @@
+﻿
+
+.pReview {
+    background-image: url('../Images/review.jpg');
+    min-height: 610px;
+}
+
+.pReview .pRevTitle {
+        text-transform: uppercase;
+        font-size: 40px;
+        color: #222;
+        font-weight: bold;
+        text-align: center;
+       position:absolute;
+       top:40%;
+       width:100%;
+    }
+.star {
+   
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+/* reviews star*/
+.rate .on {
+    background-image: url('../Images/star.png');
+}
+
+.reviewR .content {
+    text-align: left;
+    direction: ltr;
+}
+
+.reviewR .Text {
+    padding-bottom:20px;
+    border-bottom:1px dashed #808080;
+}
+.reviewR .date {
+    display: block;
+}
+
+
+.reviewSub{padding:50px 0;}
+.reviewSub .Title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.RFormUl {
+    z-index: 2000;
+}
+.RFormUl li {
+    margin-top: 5px;
+    padding: 0 20%;
+}
+
+.RFormUl input[type=text] {
+    min-width: 100%;
+    background-color: #eee;
+    border: 1px solid #fff;
+    display: inline-block;
+    color: #222;
+    padding: 3px 5px;
+    margin-bottom: 10px;
+}
+
+.RFormUl textarea {
+    min-width: 100%;
+    background-color: #eee;
+    border: 1px solid #fff;
+    display: inline-block;
+    color: #222;
+    padding: 3px 5px;
+    margin-top:-25px;
+}
+
+
+.RFormUl .btn-RSubmit {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    border: 4px solid #666;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    background-color:#fff;
+}
+
+.RFormUl .off {
+    background-image: url('../Images/starOff.png');
+    cursor:pointer;
+  
+}
+
+.RFormUl .selected {
+    background-image: url('../Images/star.png');
+}
+
+.hiddenTxtbox{opacity:0;height:1px;}

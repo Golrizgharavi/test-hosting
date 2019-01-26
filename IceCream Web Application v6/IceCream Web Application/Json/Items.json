@@ -1,0 +1,100 @@
+﻿{
+  "items": [
+
+    {
+      "id": 1,
+      "name": "Oreo",
+      "description": "I’m a dish description. Pureed ripe bananas mingle with Jim Beam bourbon, spices, and a caramel ribbon, making this a top-selling flavor.",
+      "price": "$9",
+      "img": "../Images/items/img1.jpg",
+      "flav": "../Images/flaves/flav1.jpg"
+    },
+
+    {
+      "id": 2,
+      "name": "Chocolat & Sea Salt",
+      "description": "We steep handfuls of fresh mint leaves in our local cream, then pour melted dark chocolate for a stracciatella chocolate chip texture.",
+      "price": "$6",
+      "img": "../Images/items/img2.jpg",
+      "flav": "../Images/flaves/flav2.jpg"
+    },
+
+    {
+      "id": 3,
+      "name": "VANILLA STRAWBERRY",
+      "description": "We steep handfuls of fresh mint leaves in our local cream, then pour melted dark chocolate for a stracciatella chocolate chip texture.",
+      "price": "$9",
+      "img": "../Images/items/img3.jpg",
+      "flav": "../Images/flaves/flav3.jpg"
+    },
+
+    {
+      "id": 4,
+      "name": "CHERRY CHEESECAKE",
+      "description": "Pureed ripe bananas mingle with Jim Beam bourbon, spices, and a caramel ribbon, making this a top-selling flavor.",
+      "price": "$9",
+      "img": "../Images/items/img4.jpg",
+      "flav": "../Images/flaves/flav4.jpg"
+    },
+
+    {
+      "id": 5,
+      "name": "PISTACHIO",
+      "description": "Pureed ripe bananas mingle with Jim Beam bourbon, spices, and a caramel ribbon, making this a top-selling flavor.",
+      "price": "$10.00",
+      "img": "../Images/items/img5.jpg",
+      "flav": "../Images/flaves/flav5.jpg"
+    },
+
+    {
+      "id": 6,
+      "name": "HAZELNUT & COOKIES",
+      "description": "Pureed ripe bananas mingle with Jim Beam bourbon, spices, and a caramel ribbon, making this a top-selling flavor.",
+      "price": "$9.00",
+      "img": "../Images/items/img6.jpg",
+      "flav": "../Images/flaves/flav6.jpg"
+    },
+
+    {
+      "id": 7,
+      "name": "SALTED CARAMEL SOY",
+      "description": "We steep handfuls of fresh mint leaves in our local cream, then pour melted dark chocolate for a stracciatella chocolate chip texture.",
+      "price": "$8.00",
+      "img": "../Images/items/img7.jpg",
+      "flav": "../Images/flaves/flav7.jpg"
+    }
+
+  ],
+
+  "reviews": [
+    {
+      "id": 1,
+      "fn": "Golriz",
+      "ln": "Gharavi",
+      "review": "You are awsome!!!!",
+      "rate": 5,
+      "date":"1/22/2019" 
+
+    },
+    {
+      "id": 2,
+      "fn": "Samaneh",
+      "ln": "Salemi",
+      "review": "You are awsome!!!! You are awsome!! You are awsome!! You are awsome!!",
+      "rate": 5,
+      "date": "1/22/2019"
+
+    },
+
+    {
+      "id": 3,
+      "fn": "Samaneh",
+      "ln": "Salemi",
+      "review": "You are awsome!!!! You are awsome!! You are awsome!! You are awsome!!",
+      "rate": 4,
+      "date": "1/22/2019"
+
+    }
+
+  ]
+}

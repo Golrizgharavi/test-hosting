@@ -1,0 +1,168 @@
+﻿
+.BGImg {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+.pImg1 {
+    background-image: url('../Images/ic-img1.jpg');
+    min-height: 100vh;
+    opacity: 1 !important;
+}
+
+
+.pImg2 {
+    background-image: url('../Images/ic-img2.jpg');
+    min-height: 100vh;
+}
+
+.pImg3 {
+    background-image: url('../Images/ic-img3.jpg');
+    min-height: 100vh;
+}
+
+.pTopTitle {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    text-shadow: 1px 1px 1px #666;
+    font-weight: bold;
+    width: 100%;
+    font-size: 40px;
+    text-transform:uppercase;
+}
+
+.pImg3 .pTopTitle {
+    color: #000;
+}
+
+.BGImg h1 {
+    font-size: 80px;
+}
+
+.BGImg .pBtnMnu {
+
+    display:inline-block;
+    padding:15px 30px;
+    border:4px solid #fff;
+    color:#fff;
+    text-decoration:none;
+    margin-top:20px;
+    font-size:35px;
+}
+
+    .BGImg .pBtnMnu:hover {
+        border-color: #67ca59;
+        color: #67ca59;
+    }
+
+    .BGImg .pBtnMnu:visited {
+        border-color: #fff;
+        color: #fff;
+    }
+
+.pImg2 .pBorder {
+    background-color: #222;
+    opacity: 0.60;
+    padding: 30px;
+    display:inline-block;
+}
+
+.pImg3 .pTopTitle {
+    color: #000;
+}
+
+.pImg3 .pBtnMnu {
+    color: #000;
+    border-color: #000;
+}
+.pImg3 .pBtnMnu:visited {
+        border-color: #000;
+        color: #000;
+ }
+
+.section{
+    text-align:center;
+    padding:30px 20px;
+}
+.section .Title {
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 20px ;
+    color: #222;
+    text-transform: uppercase;
+}
+
+    .section .Title i {
+        display: block;
+        font-style: italic;
+        font-size: 20px;
+        font-weight: normal;
+        text-transform:none;
+    }
+
+.section .Text {
+    display:block;
+
+}
+
+    .section .btnMore {
+        display: inline-block;
+        padding: 8px 18px;
+        border: 2px solid #222;
+        color: #222;
+        text-decoration: none;
+        margin-top: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+.darkBG{
+    background-color:#222;
+    color:#aaa;
+}
+
+    .darkBG .Title {
+        color: #fff !important;
+    }
+
+    .darkBG .btnMore {
+        color: #fff !important;
+        border-color:#fff;
+    }
+
+
+
+.btnMore:hover {
+    border-color: #67ca59;
+    color: #67ca59;
+}
+
+.CarouselHolder img {
+    max-width: 100%;
+}
+
+.CarouselHolder .slide-wrapper {
+    text-align: center;
+}
+
+
+
+
+.CarouselHolder .glyphicon-chevron-right {background-color:#d94040; border-radius:5px}
+.CarouselHolder .glyphicon-chevron-left {
+    background-color: #d94040;
+    border-radius: 5px
+}
+
+@media (max-width:568px) {
+    .BGImg {
+            background-attachment: scroll;
+        }
+    }

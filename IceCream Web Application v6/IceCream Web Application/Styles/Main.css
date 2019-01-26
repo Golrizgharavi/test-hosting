@@ -1,0 +1,157 @@
+﻿body, html {
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+
+}
+p{margin:0;}
+hr {
+    margin: 0;
+}
+ul{list-style-type:none;}
+#ContentHolder {margin-top:-51px;position:relative;}
+
+.affix {
+    -webkit-transition: padding 0.2s ease-out;
+    -moz-transition: padding 0.2s ease-out;
+    -o-transition: padding 0.2s ease-out;
+    transition: padding 0.2s ease-out;
+}
+
+
+.affix-top .nav > li > a {
+    color: #000;
+}
+
+.navbar a {
+    color: #000;
+    font-weight:bold;
+    text-shadow:1px 1px #fff;
+}
+
+.sm-holder{padding-top:20px;}
+.sm-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 2px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Header .sm-icon:hover {
+    background-color: transparent !important;
+}
+.Header .fb-ic {
+    background-image: url('../Images/SM/fb-logo.png');
+}
+
+.Header .tw-ic {
+    background-image: url('../Images/SM/tw-logo.png');
+}
+
+.Header .insta-ic {
+    background-image: url('../Images/SM/insta-logo.png');
+}
+
+.Header .yt-ic {
+    background-image: url('../Images/SM/yt-logo.png');
+}
+
+
+
+.Footer {
+
+    background-color:#000;
+    color:#fff;
+
+}
+
+.Footer .myInfo{
+    
+    padding:0 20px 20px 20px;display:inline-block;vertical-align:top;
+
+}
+
+    .Footer .myInfo p {
+        margin: 0;
+        display: block;
+    }
+    .Footer .myInfo .Title {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-bottom: 25px;
+        display: block;
+        font-size:22px;
+    }
+
+.Footer .myInfo .Content {
+        color: #fff;
+        display:block;
+    }
+
+.Footer .FRow{padding:100px 140px 120px 140px;}
+.footer-copyright p{
+    background-color:#000;
+    color:#fff;
+    padding:20px 0;
+    display:block;
+   
+}
+
+.Footer input[type=text] {min-width:100%;background-color:#eee;border:1px solid #fff;display:inline-block;color:#222;padding:3px 5px;margin-bottom:10px;}
+.Footer .btn-Subscribe {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    border: 4px solid #fff;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+}
+
+
+
+
+.Footer .fb-ic {
+    background-image: url('../Images/SM/fb-logo-w.png');
+}
+
+.Footer .tw-ic {
+    background-image: url('../Images/SM/tw-logo-w.png');
+}
+
+.Footer .insta-ic {
+    background-image: url('../Images/SM/insta-logo-w.png');
+}
+
+.Footer .yt-ic {
+    background-image: url('../Images/SM/yt-logo-w.png');
+}
+
+.FSocialM{padding:15px 0 0 0;}
+
+.FSocialM li {
+    display: inline-block;
+    padding-right: 4px
+}
+
+@media (min-width:768px) {
+    .affix-top {
+        /* navbar style at top */
+        background: transparent;
+        border-color: transparent;
+        padding: 15px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+}

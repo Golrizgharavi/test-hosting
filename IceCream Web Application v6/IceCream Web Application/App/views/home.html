@@ -1,0 +1,93 @@
+﻿
+
+<div ng-controller="homeController as homeControllerVM">
+
+
+    <div class="BGImg pImg1">
+        <div class="pTopTitle">
+            Hand Crafted <h1>Dairy Free</h1>
+            <a href="#/menu" class="pBtnMnu" target="_blank"> Menu</a>
+        </div>
+    </div>
+    <div class="section row darkBG ">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="Title">Our Flavors<i>Ice cream by the sea!</i></div>
+            <span class="Text">
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+            </span>
+            <a href="#/menu" class="btnMore" target="_blank">Read More!</a>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+    <div class="BGImg pImg2">
+
+        <div class="pTopTitle">
+            <div class="pBorder">
+                Catering & More<h1> Events</h1>
+                <a href="#/menu" class="pBtnMnu" target="_blank"> Menu</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="Title">Our Place<i>Ice cream by the sea!</i></div>
+            <span class="Text">
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+            </span>
+            <a href="#/about" class="btnMore" target="_blank">Read More!</a>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+    <div class="BGImg pImg3">
+        <div class="pTopTitle">
+            Catering & More<h1>Events</h1>
+            <a href="#/menu" class="pBtnMnu" target="_blank"> Menu</a>
+        </div>
+    </div>
+
+        <div class="row CarouselHolder">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" ng-repeat="i in homeControllerVM.Items" ng-class="$index==0 ? 'active' : ''" data-slide-to="$index" ></li>
+          
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox" >
+                    <div class="item active">
+                        <div class="slide-wrapper col-sm-3" ng-repeat="item in homeControllerVM.Items">
+                            <a class="slide-link" href="javascript:void(0)" tabindex="0"><img class="slide-image" src="{{item.img}}" alt=""></a>
+                        </div>
+
+                    </div>
+        
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="javascript:void(0)" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="javascript:void(0)" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+
+
+</div>
+
+
+
+
+
+

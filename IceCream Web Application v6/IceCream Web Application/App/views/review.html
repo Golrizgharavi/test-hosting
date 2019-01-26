@@ -1,0 +1,121 @@
+﻿<head>
+    <link href="../../Styles/Review.css" rel="stylesheet" />
+</head>
+<div ng-controller="reviewController as reviewControllerVM">
+
+    <div class="BGImg pReview">
+        <div class="pRevTitle">
+            <h1>Reviews</h1>
+        </div>
+    </div>
+
+    <div class="section row darkBG reviewR" ng-repeat="review in reviewControllerVM.myReviews">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 content">
+            <div class="Title"><i>{{review.fn}} {{review.ln}}</i></div>
+            <span class="rate">
+                <i class="star on" ng-if="review.rate >= 1"></i>
+                <i class="star on" ng-if="review.rate >= 2"></i>
+                <i class="star on" ng-if="review.rate >= 3"></i>
+                <i class="star on" ng-if="review.rate >= 4"></i>
+                <i class="star on" ng-if="review.rate >= 5"></i>
+            </span>
+            <i class="date">Date Published: {{review.date}}</i>
+            <span class="Text">
+                {{review.review}}
+            </span>
+
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <!--<div class="section row darkBG reviewR">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 content">
+            <div class="Title"><i>Golriz Gharavi</i></div>
+            <span class="rate"><i class="star"></i> <i class="star"></i> <i class="star"></i></span>
+            <i class="date">Date Published: 1/22/2019</i>
+            <span class="Text">
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+            </span>
+
+        </div>
+        <div class="col-md-2"></div>
+    </div>-->
+
+
+    <div class="reviewSub row">
+
+            <form name="vm.ReviewForm" class="form-horizontal">
+                <div class="col-md-2"></div>
+                <ul class="RFormUl col-md-8">
+                    <li>
+                        <div class="Title">Submit a Review</div>
+                    </li>
+                    <li>
+                        <input type="text" name="Name" id="Name" ng-model="reviewControllerVM.Name" class="form-control"  ng-maxlength="20" ng-minlength="2" placeholder="Your Name..." required>
+                        <div ng-show="vm.ReviewForm.$submitted || vm.ReviewForm.Name.$touched">
+                            <div ng-show="vm.ReviewForm.Name.$error.required">Required Feild!! :)</div>
+                        </div>
+                       
+                    </li>
+                    <li>
+
+                        <input type="text" name="REmail" id="REmail" ng-model="reviewControllerVM.REmail" class="form-control"  ng-maxlength="20" ng-minlength="2" placeholder="Your Email..." required ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/">
+                        <span ng-show="vm.ReviewForm.REmail.$dirty&&vm.ReviewForm.REmail.$error.pattern">Please Enter a Valid Email! :)</span>
+                    </li>
+                    <li id="RStars">
+                        <i class="star off" title="Poor" data-value="1"></i>
+                        <i class="star off" title="Fair" data-value="2"></i>
+                        <i class="star off" title="Good" data-value="3"></i>
+                        <i class="star off" title="Excellent" data-value="4"></i>
+                        <i class="star off" title="WOW!!" data-value="5"></i>
+                        <input type="text" name="Rate" id="InputRate" ng-model="reviewControllerVM.Rate" class="hiddenTxtbox" required />
+                        <div ng-show="vm.ReviewForm.$submitted && vm.ReviewForm.Rate.$touched">
+                            <div ng-show="vm.ReviewForm.Rate.$error.required">Kindly, give me a Rate!! :)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <textarea  name="taReview" ng-model="reviewControllerVM.taReview" id="taReview" rows="4" wrap="soft" placeholder="Your Review..." class="form-control" required></textarea>
+                        <div ng-show="vm.ReviewForm.$submitted || vm.ReviewForm.taReview.$touched">
+                            <div ng-show="vm.ReviewForm.taReview.$error.required">Required Feild!! :)</div>
+                        </div>
+                    </li>
+                    <li class="btnSubmitHolder">
+                        <button ng-click="reviewControllerVM.SubmitReview()" class="btn-RSubmit" ng-disabled="vm.ReviewForm.$invalid"> Submit My Review  </button>
+
+                    </li>
+                </ul>
+                <div class="col-md-2"></div>
+
+              
+
+            </form>
+
+        <script>
+
+            var $hiddenTxtRate =$('#InputRate')
+            $('#RStars .star').on('click', function () {
+                var onStar = parseInt($(this).data('value'), 10); // The star currently selected
+                var stars = $(this).parent().children('i.star');
+
+                for (i = 0; i < stars.length; i++)
+                    $(stars[i]).removeClass(' selected');
+
+                for (i = 0; i < onStar; i++)
+                    $(stars[i]).addClass(' selected');
+
+                 
+                $hiddenTxtRate.val(onStar);
+                $hiddenTxtRate.trigger('input');
+                $hiddenTxtRate.trigger('change');
+               
+        
+            });
+                 
+          
+                
+        </script>
+     </div>
+   
+    </div>
+

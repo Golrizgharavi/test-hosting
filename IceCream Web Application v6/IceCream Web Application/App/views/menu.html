@@ -1,0 +1,41 @@
+﻿
+<head>
+    <link href="../../Styles/Menu.css" rel="stylesheet" />
+</head>
+<div ng-controller="menuController as menuControllerVM">
+
+    <div class="BGImg pFlav">
+        <div class="pFlavTitle">
+                   Our
+            <h1>Menu & Flavors</h1>
+        </div>
+    </div>
+    <div class="FlavsHolder row">
+
+        <div class="col-sm-4" ng-repeat="item in menuControllerVM.Items">
+            <div class="FlavItem">
+                <img src="{{item.flav}}" clss="flavImg  img-responsive" />
+                <b class="flavTitle">{{item.name}}</b>
+                <span class="flavDec">
+                    {{item.description}}
+                    <i>{{item.price}}</i>
+                </span>
+
+            </div>
+        </div>
+        <!--<div class="col-sm-4">
+            <div class="FlavItem">
+                <img src="../Images/flaves/flav1.jpg" clss="flavImg  img-responsive" />
+                <b class="flavTitle">RASPBERRY SORBET</b>
+                <span class="flavDec">
+                    I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text.
+                    <i>$9</i>
+                </span>
+
+            </div>
+        </div>-->
+       
+
+    </div>
+
+</div>
